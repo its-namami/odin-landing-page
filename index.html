@@ -5,9 +5,31 @@
     <link rel="stylesheet" href="assets/stylesheets/style.css">
   </head>
   <body>
-    <header class="dark-bkgr">
-      <h1 class="hero-main">This website is awesome</h1>
-      <p class="hero-secondary">Some very cool subtext only this website has, as a placeholder</p>
+    <header class="dark-bkgr flexbox-column">
+      <div class=" w-80 m-0-auto">
+        <nav class="flexbox justify-between align-center">
+          <div class="header-logo"><a href="#">Header Logo</a></div>
+          <div class="header-links">
+            <ul class="flexbox gap-1rem">
+              <li><a href="#">header link one</a></li>
+              <li><a href="#">header link two</a></li>
+              <li><a href="#">header link three</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="flexbox header-main">
+          <div class="flex-item">
+            <h1 class="hero-main">This website is awesome</h1>
+            <p class="hero-secondary">Some very cool subtext only this website has, as a placeholder</p>
+            <button class="call-to-action">Sign up</button>
+          </div>
+          <div class="flex-item">
+            <div class="img-placeholder flexbox align-center justify-center">
+              This is an image placeholder
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
       <section class="cards">

@@ -15,6 +15,7 @@
 .hero-main {
   font: 900 3rem 'Roboto', 'Arial', monospace;
   color: #F9FAF8;
+  margin: 0;
 }
 
 .hero-secondary {
@@ -22,14 +23,22 @@
   color: #E5E7EB;
 }
 
-.hero-logo {
+.header-logo a {
   font-size: 1.5rem;
   color: #F9FAF8;
+  text-decoration: none;
 }
 
-button, 
+button.call-to-action, 
 section.call-to-action {
   background-color: #3882F6;
+}
+
+button.call-to-action {
+  padding: .5rem 1.5rem;
+  border-radius: .5rem;
+  color: #E5E7EB;
+  border: none;
 }
 
 .information-header {
@@ -45,3 +54,73 @@ section.quote {
   font: 2rem light italic 'Roboto', 'Arial', monospace;
   color: #1F2937;
 }
+
+
+.flexbox,
+.flexbox-column {
+  display: flex;
+}
+
+.flexbox-column {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+header li {
+  list-style-type: none;
+}
+header li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.125rem;
+  color: #E5E7EB;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-1rem {
+  gap: 1rem;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.m-0-auto {
+  margin: 0 auto;
+}
+
+.img-placeholder {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 5rem;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+header {
+  padding: 0 0 5rem 0;
+}
+
+nav {
+  padding: 0 0 2rem 0;
+}
+
+.header-main {
+  gap: 1rem;
+}
+.header-main * {
+  flex: 1;
+}
+
