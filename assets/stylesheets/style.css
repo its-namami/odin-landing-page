@@ -3,8 +3,9 @@
   src: url('../fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf');
 }
 
-:root {
-  font-family: 'Roboto', sans-serif;
+:root, 
+:root * {
+  font-family: 'Roboto', 'Arial', monospace;
 }
 
 .dark-bkgr {
@@ -12,7 +13,7 @@
 }
 
 .hero-main {
-  font: 3rem heavy;
+  font: 900 3rem 'Roboto', 'Arial', monospace;
   color: #F9FAF8;
 }
 
@@ -27,19 +28,20 @@
 }
 
 button, 
-.call-to-action {
+section.call-to-action {
   background-color: #3882F6;
 }
 
 .information-header {
-  36px #1f2937 weight:900;
-  font: 36px black;
+  color: #1f2937;
+  font: 900 2rem 'Roboto', 'Arial', monospace;
 }
 
 section.quote {
-
+  background-color: #E5E7EB;
 }
 
 .quote p {
-
+  font: 2rem light italic 'Roboto', 'Arial', monospace;
+  color: #1F2937;
 }
