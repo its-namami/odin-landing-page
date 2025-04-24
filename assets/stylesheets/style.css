@@ -41,23 +41,21 @@ button.call-to-action {
   color: #1f2937;
   text-align: center;
   font: 900 2rem 'Roboto', 'Arial', monospace;
-  margin: 2rem auto;
+  margin: 2rem 0;
 }
 
 .information-content {
-  margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 2rem;
-  max-width: 40rem;
 }
 
 .information-card {
   flex: 1 1 6rem;
+  max-width: calc(60vh/4);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: .5rem;
 }
 
@@ -68,19 +66,38 @@ button.call-to-action {
   display: inline-block;
 }
 
-.information-text {-section
+.information-text {
   text-align: center;
   margin: 0;
 }
 
 section#quote-section {
   background-color: #E5E7EB;
-  margin: 3rem auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70% auto;
 }
 
-.quote p {
-  font: 2rem light italic 'Roboto', 'Arial', monospace;
+section#quote-section,
+section#quote-section .quote-block {
+  margin: 5rem auto;
+}
+
+section#quote-section .quote-text,
+section#quote-section .quote-author {
+  margin: 0;
+}
+
+section#quote-section .quote-text {
+  font: italic 100 2rem 'Roboto', 'Arial', monospace;
   color: #1F2937;
+  margin-bottom: .5rem;
+}
+
+section#quote-section .quote-author {
+  text-align: end;
 }
 
 header li {
@@ -99,10 +116,7 @@ header li a {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  width: 50%;
-  padding: 5rem;
   text-align: center;
-  width: 100%;
   height: 100%;
   background-color: #6d747d;
   color: #E5E7EB;
@@ -115,9 +129,16 @@ header#header-section {
   flex-flow: column nowrap;
 }
 
-.content-w80 > *{
+.content-w80 {
   max-width: 80%;
-  margin: auto;
+}
+
+.content-w60 {
+  max-width: 60%;
+}
+
+.margin-center {
+  margin: 0 auto;
 }
 
 nav#main-navigation {
