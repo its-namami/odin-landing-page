@@ -3,9 +3,14 @@
   src: url('../fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf');
 }
 
-:root, 
-:root * {
+:root{ 
   font-family: 'Roboto', 'Arial', monospace;
+  background-color: #1F2937; /* this way, when scrolling down fast, white doesn't appear */
+}
+
+body {
+  margin: 0;
+  background-color: white;
 }
 
 .hero-main {
@@ -25,20 +30,8 @@
   text-decoration: none;
 }
 
-button.call-to-action, 
-section.call-to-action {
-  background-color: #3882F6;
-}
-
-button.call-to-action {
-  padding: .5rem 1.5rem;
-  border-radius: .5rem;
-  color: #E5E7EB;
-  border: none;
-}
-
 .information-header {
-  color: #1f2937;
+  color: #1F2937;
   text-align: center;
   font: 900 2rem 'Roboto', 'Arial', monospace;
   margin: 2rem 0;
@@ -47,13 +40,12 @@ button.call-to-action {
 .information-content {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 2rem;
 }
 
 .information-card {
-  flex: 1 1 6rem;
-  max-width: calc(60vh/4);
+  flex: 0 1 8rem;
   display: flex;
   flex-direction: column;
   gap: .5rem;
@@ -130,11 +122,15 @@ header#header-section {
 }
 
 .content-w80 {
-  max-width: 80%;
+  width: 80%;
 }
 
 .content-w60 {
-  max-width: 60%;
+  width: 60%;
+}
+
+.border-box {
+  box-sizing: border-box;
 }
 
 .margin-center {
@@ -162,6 +158,29 @@ nav#main-navigation .header-links ul {
   flex: 1;
 }
 
+section#call-to-action > * {
+  padding: 3rem 5rem;
+  margin: 5rem auto;
+}
+
+section#call-to-action > *,
+button.call-to-action-button {
+  background-color: #3882F6;
+  border-radius: .5rem;
+}
+
+button.call-to-action-button {
+  flex: 1;
+  padding: .5rem 2rem;
+  color: #E5E7EB;
+  border: 1px solid #E5E7EB;
+}
+
+button.call-to-action-button:hover {
+  background-color: #E5E7EB;
+  color: #3882F6;
+}
+
 footer#main-footer {
   padding: 1rem 0;
   background-color: #1F2937;
@@ -182,3 +201,31 @@ footer#main-footer a[data-creator]{
   color: lightblue;
   text-decoration: none;
 }
+
+.call-to-action-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  flex-flow: row wrap;
+}
+
+.call-to-action-text {
+  color: #F9FAF8;
+  flex: 7;
+}
+
+.call-to-action-heading,
+.call-to-action-description {
+  margin: 0;
+}
+
+.call-to-action-heading {
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+.no-border {
+  border: none !important;
+}
+
