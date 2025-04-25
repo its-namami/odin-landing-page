@@ -165,6 +165,7 @@ nav#main-navigation .header-links ul {
 .header-main {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 .header-main * {
   flex: 1;
